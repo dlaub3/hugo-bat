@@ -1,6 +1,11 @@
+@import url('/fonts/Poppins-Bold.ttf');
+
 body {
    background: white;
+   font-family: 'Poppins', sans-serif;
 }
+
+
 
 .flex {
  display: flex;
@@ -14,12 +19,27 @@ body {
   flex-flow: row nowrap;
 }
 
+.col-wrap {
+  flex-flow: column wrap;
+}
+
+.col-nowrap {
+  flex-flow: column nowrap;
+}
 
 .index-a {
+   justify-content: center; 
    background-image: url('/images/night-waves.svg');
    width: 100vw;
    height: 800px;
    background-size: cover;
+   color: white;
+
+   .logo {
+      margin-top: 160px;
+      width: 100%;
+      height: 119px;
+   }
 }
 
 .index-b {
