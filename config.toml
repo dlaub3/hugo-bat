@@ -6,8 +6,11 @@ theme = "bat"
   includeNewer = true
   threshold = 80
   toLower = false
-
   [[related.indices]]
     name = "topic"
     weight = 100
-
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

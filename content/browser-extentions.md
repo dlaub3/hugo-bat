@@ -1,8 +1,8 @@
 ---
-title: "Browser Extention Safety"
-date: 2021-06-03T11:13:24-04:00
+title: "Browser Extentions"
+date: 2021-06-03T11:13:24-04:01
 topic: "extentions" 
-draft: true
+draft: false
 ---
 
 

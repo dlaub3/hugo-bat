@@ -1,3 +1,12 @@
 {{ define "main" }}
-
+  <aside id="sidebar-left">
+    <h2>Outline</h2>
+    {{ .Page.TableOfContents }}
+  </aside>
+  <article id="content">
+    {{ .Content }}
+  </article>
+  <aside>
+    {{- partial "related.html" . -}}
+  </aside>
 {{ end }}
