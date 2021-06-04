@@ -43,6 +43,8 @@ header > * {
   width: calc(100% - (168 * 2));
   min-height: 1084px;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   .header {
     display: flex;
