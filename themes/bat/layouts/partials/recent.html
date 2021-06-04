@@ -1,6 +1,6 @@
 <div class="row recent-articles">
     <h2>Recent Articles</h2>
-    {{ range first 3 .Pages.ByDate.Reverse }}
+    {{ range first 3 .Site.RegularPages.ByDate.Reverse }}
         <section class="recent-article">
             <header>
                 <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>

@@ -1,14 +1,57 @@
 {{ define "main" }}
-<body>
-  <div class="flex row-nowrap index-a">
-    <div class="flx col-nowrap">
-    <img class="logo" src="/images/bat-logo.svg" />
-    <h1>Basic Attention Token</h1>
+<section class="intro">
+  <div class="header">
+    <div class="text">
+      <h1>Basic Attention Token</h1>
+      <p>Introducing blockchain based digital advertising</p>
+    </div>
+    <div class="buttons">
+      <button class="cta-button brand-blue">
+        <i class="icon play small"></i> <span>Video</span>
+      </button>
+      <button class="cta-button transparent">
+        <i class="icon brave small"></i> <span>Get Brave</span>
+      </button>
+    </div>
+    <p class="info">
+      From the creator of JavaScript and the co-founder of Mozilla and Firefox,
+      with a solid team – funded by Founders Fund, Foundation Capital, Propel
+      Venture Partners, Pantera Capital, DCG, Danhua Capital, and Huiyin
+      Blockchain Venture among others.
+    </p>
+  </div>
+  <div class="card-float">
+    <div class="heading">
+      <h4>Open source. Transparent. Decentralized. Efficient.</h4>
+      <a href="/"
+        ><i class="icon paper"></i><span>View the White Paper</span></a
+      >
+      <a href="/"><i class="icon paper"></i><span>On Token Velocity</span></a>
+    </div>
+    <div class="text-group">
+      <div class="section">
+        <i class="icon sheild medium"></i>
+        <p>
+          Basic Attention Token radically improves the efficiency of digital
+          advertising by creating a new token that can be exchanged between
+          publishers, advertisers, and users. It all happens on the Ethereum
+          blockchain.
+        </p>
+      </div>
+      <div class="section">
+        <i class="icon chart medium"></i>
+        <p>
+          The token can be used to obtain a variety of advertising and
+          attention-based services on the BAT platform. The utility of the token
+          is based on user attention, which simply means a person’s focused
+          mental engagement.
+        </p>
+      </div>
     </div>
   </div>
-  <div class="flex row-nowrap index-b"></div>
-  <div class="flex row-nowrap index-c"></div>
-  <div class="flex row-nowrap index-d"></div>
-  <div class="flex row-nowrap index-e"></div>
-  {{- partial "recent.html" . -}}
+</section>
+<section class="challenge"></section>
+<section class="advertising"></section>
+<section class="new-posts">{{- partial "recent.html" . -}}</section>
+<section class="how-it-works"></section>
 {{ end }}

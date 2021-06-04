@@ -1,68 +1,193 @@
-@import url('/fonts/Poppins-Bold.ttf');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "colors.scss";
+@import "icons.scss";
+@import "utils.scss";
+@import "headings.scss";
+@import "buttons.scss";
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
 body {
-   background: white;
-   font-family: 'Poppins', sans-serif;
+  background: white;
+  font-family: "Poppins", sans-serif;
+  color: $text-dark;
+  margin: 0;
 }
 
-
-
-.flex {
- display: flex;
+#content > *,
+footer > *,
+header > * {
+  padding-left: calc(100vw / 10 + 0.5rem);
+  padding-right: calc(100vw / 10 + 0.5rem);
+  @media screen and (min-width: 1700px) {
+    padding-left: calc((100vw - 1500px) / 2);
+    padding-right: calc((100vw - 1500px) / 2);
+  }
 }
 
-.row-wrap {
-  flex-flow: row wrap;
+.intro {
+  justify-content: center;
+  background-image: url("/images/bat-waves.svg");
+  width: calc(100% - (168 * 2));
+  min-height: 1084px;
+  background-size: cover;
+
+  .header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    color: white;
+    .text {
+      margin-top: calc(100vw / 3);
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      p,
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      h1 {
+        font-size: 52px;
+        line-height: 64px;
+        margin: 0;
+      }
+      p {
+        font-size: 22px;
+        line-height: 44px;
+        margin: 0;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-top: calc(32px - 8px);
+      margin-bottom: calc(64px - 8px);
+      button {
+        margin: 8px;
+      }
+    }
+
+    .info {
+      font-size: 15px;
+      line-height: 24px;
+      text-align: center;
+      color: #f0f2ff;
+      margin: 0;
+    }
+  }
+  .card-float {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: white;
+    min-height: 444px;
+    margin-top: 70px;
+    border-radius: 12px;
+    position: relative;
+    padding-left: calc(100% / 10 - 0.5rem);
+    padding-right: calc(100% / 10 - 0.5rem);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(-1 * 444px / 3);
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
+    > div {
+      padding-top: 72px;
+    }
+    .heading {
+      margin: 16px;
+      display: flex;
+      flex-flow: column nowrap;
+      flex: 1;
+      @media screen and (min-width: 750px) {
+        flex-basis: 240px;
+      }
+
+      h4 {
+        margin-top: 0;
+      }
+
+      a {
+        display: flex;
+        max-width: max-content;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 19px;
+        color: $brand-blue;
+        text-decoration: none;
+        > span {
+          margin-left: 8px;
+        }
+      }
+      a:not(:first-of-type) {
+        margin-top: 16px;
+      }
+      a:hover {
+        text-decoration: underline 2px;
+      }
+    }
+    .text-group {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      flex-grow: 1;
+      @media screen and (min-width: 850px) {
+        flex-basis: 550px;
+        justify-content: space-between;
+      }
+      .section {
+        margin: 16px;
+        display: flex;
+        flex-flow: column nowrap;
+        @media screen and (min-width: 750px) {
+          flex-basis: 240px;
+        }
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+  }
 }
 
-.row-nowrap {
-  flex-flow: row nowrap;
-}
-
-.col-wrap {
-  flex-flow: column wrap;
-}
-
-.col-nowrap {
-  flex-flow: column nowrap;
-}
-
-.index-a {
-   justify-content: center; 
-   background-image: url('/images/night-waves.svg');
-   width: 100vw;
-   height: 800px;
-   background-size: cover;
-   color: white;
-
-   .logo {
-      margin-top: 160px;
-      width: 100%;
-      height: 119px;
-   }
-}
-
-.index-b {
- background: #f8f8f8;
-  height: 800px;
-}
-
-.index-c {
-  height: 800px;
-}
-
-.index-d {
+.challenge {
   background: #f8f8f8;
   height: 800px;
 }
 
-.index-e {
-  background: #353DAB;
+.advertising {
+  height: 800px;
+}
+
+.new-posts {
+  background: #f8f8f8;
+  height: 800px;
+}
+
+.how-it-works {
+  background: #353dab;
   height: 800px;
 }
 
 .footer {
- background: #28222E;
- color: white;
- height: 300px;
+  background: #28222e;
+  color: white;
+  height: 300px;
 }

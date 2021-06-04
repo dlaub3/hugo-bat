@@ -1,0 +1,20 @@
+@for $i from 1 through 7 {
+  h#{$i} {
+    font-style: normal;
+    font-weight: 600;
+    color: $text-dark;
+  }
+}
+
+h2 {
+  font-size: 52px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 28px;
+}
+

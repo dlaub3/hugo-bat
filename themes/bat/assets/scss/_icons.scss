@@ -1,0 +1,38 @@
+.icon {
+  &.small {
+    width: 24px;
+    height: 24px;
+  }
+  &.medium {
+    width: 52px;
+    height: 52px;
+  }
+  &.large {
+    width: 96px;
+    height: 96px;
+  }
+
+  &.paper {
+    content: url("/images/paper.svg");
+    &.small {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &.brave {
+    content: url("/images/brave-logo.svg");
+  }
+
+  &.play {
+    content: url("/images/play-filled.svg");
+  }
+
+  &.chart {
+    content: url("/images/chart.svg");
+  }
+
+  &.sheild {
+    content: url("/images/sheild.svg");
+  }
+}
